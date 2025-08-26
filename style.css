@@ -11,6 +11,7 @@
     --cor2: #EF9F9B;
 }
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -21,8 +22,9 @@ html, body {
 }
 
 main {
-    width: 800px;
-    padding: 10px;
+    min-width: 400px;
+    max-width: 800px;
+    padding: 30px;
     margin: auto;
     background-color: rgba(245, 192, 192, 0.493);
     border-radius: 10px;
@@ -31,12 +33,21 @@ main {
 
 }
 
-header > nav {
+
+nav {
+    
+    background-image: linear-gradient(to left, #eb1e9d3a, #EF9F9B);
     font-family: var(--fonte3);
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 0px;
-    font-size: 20px;
+    padding-bottom: 20px;
+    
+}
+
+nav > a {
+    padding: 10px;
+    font-size: 2.5vw;
+    border-radius: 10px;
 }
 
 p {

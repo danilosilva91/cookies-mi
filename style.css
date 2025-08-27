@@ -17,18 +17,65 @@
     padding: 0px;
 }
 
+div.sabores {
+    display: inline-block;
+}
+
+ div{
+margin: 4vw;
+}
+div.texto{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: justify;
+    font-size: 1.3em;
+
+}
+div.quadrado {
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    padding-left: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.foto {
+    height: 300px;
+}
+
 html, body {
     font-family: var(--fonte2);
 }
 
+section {
+    background-color: white;
+    border-radius: 10px;
+    width: center;
+    
+}
+
+section > p {
+    text-align: justify;
+    padding: 5px;
+}
+
+
 main {
-    min-width: 400px;
-    max-width: 800px;
-    padding: 30px;
+    min-width: 300px;
+    max-width: 1500px;
+    padding: 15vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin: auto;
-    background-color: rgba(245, 192, 192, 0.493);
+    background-color: rgba(235, 139, 139, 0.493);
+    
     border-radius: 10px;
     background-attachment: fixed;
+    background-size: 100px;
 
 
 }
@@ -36,17 +83,18 @@ main {
 
 nav {
     
-    background-image: linear-gradient(to left, #eb1e9d3a, #EF9F9B);
+    background-image: linear-gradient(to left, #eb1e9d3a, #ef9f9bd7);
     font-family: var(--fonte3);
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
     
 }
 
 nav > a {
-    padding: 10px;
-    font-size: 2.5vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1em;
     border-radius: 10px;
 }
 

@@ -146,7 +146,7 @@ main > p {
 }
 section > h2 {
     background-color: var(--cor2);
-    color: var(--cor1);
+    color: var(--cor3);
     padding: 0px;
     padding-left: 10px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.733);

@@ -21,17 +21,23 @@
     height: 90px;
 }
 .container{
-    background-color: var(--cor1);
+    background-image: linear-gradient(to left, var(--cor1), rgb(43, 38, 38));
     border-radius: 0px 0px 10px 10px;
-    padding-bottom: 5px;
+ 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+
 }
 .item {
     background-color: var(--cor3);
     margin: 10px;
-    color: var(--cor3);
+    color: var(--cor2);
     font-size: 22px;
-    width:  100px;
-    height: 100px;
+    width:  250px;
+    height: 300px;
     border-radius: 10px;
+    flex-shrink: 1;
 }

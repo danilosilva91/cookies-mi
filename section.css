@@ -21,9 +21,8 @@
     height: 90px;
 }
 .container{
-    background-image: linear-gradient(to left, var(--cor1), rgb(43, 38, 38));
+    background-image: var(--cor3);
     border-radius: 0px 0px 10px 10px;
- 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,12 +31,33 @@
 
 }
 .item {
-    background-color: var(--cor3);
-    margin: 10px;
+    background-image: url(imagens/fundo_pontinhos.jpeg);
+    background-size: cover;
+    margin: 5px;
     color: var(--cor2);
-    font-size: 22px;
+    font-size: 15px;
     width:  250px;
-    height: 300px;
-    border-radius: 10px;
-    flex-shrink: 1;
+    height: 400px;
+    border-radius: 5px;
+    border: 2px solid;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
+
+.item p {
+    background-color: #6d412a;
+    color: var(--cor3);
+}
+h3 {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    font-size: 1.2em;
+}
+
+.item img {
+    width: 200px;
+}
+

@@ -19,7 +19,7 @@
     padding: 0px;
 }
 html, body {
-    font-family: var(--fonte4);
+    font-family: var(--fonte3);
    
 }
 header{
@@ -89,6 +89,7 @@ h2 {
     border-radius: 10px;
     border: 1px solid var(--cor1);
 }
+
 footer {
     font-family: var(--fonte3);
     text-align: center;

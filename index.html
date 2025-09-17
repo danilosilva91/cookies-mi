@@ -6,29 +6,45 @@
     <title>CookieMi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
    
 </head>
 <body>
        <header>
-        
-       <div id="logo">
-        <img src="imagens/logo_fundo_transparente.png" alt="CookieMi">
-    </div>
+            <a href="#inicio">
+                <div id="logo">
+                     <img src="imagens/logo_fundo_transparente.png" alt="CookieMi">
+                </div>
+            </a>
             
-     <nav> 
-            <a href="#">QUEM SOMOS</a> <a href="#">MENU</a><a href="#"> REDES SOCIAIS</a> <a href="#">CONTATO</a>
-    </nav>
+            <nav> 
+            <a href="#quem_somos">QUEM SOMOS</a>
+            <a href="#menu">MENU</a>
+            <a href="#redes_sociais"> REDES SOCIAIS</a> 
+            <a href="#contato">CONTATO</a>
+             </nav>
     </header>
-    <div class="imagem">
-    </div>
-    <main>
+    <main id="inicio">
+            <div class="carousel-container">
+                    <div class="carousel-slide">
+                    <img src="imagens/cookie_fornada.jpg" alt="imagem_1">
+                     <img src="imagens/cookie_grelha.jpg" alt="imagem_2">
+                     <img src="imagens/cookies_biscoitos.jpg" alt="imagem_3">
+                    </div>
+            </div>        
         
-        <section>
-        <h2>QUEM SOMOS</h2>    
+        <section id="quem_somos">
+            <h2>QUEM SOMOS</h2>   
+            <div class="quem-somos-conteudo">
+            <img src="imagens/camila_confeiteira.png" alt="Foto da confeiteira Camila">
+            <p>
+            Ei, eu sou a Camila! Eu criei a <strong>CookieMI</strong> porque acredito que a vida fica muito mais leve (e gostosa!) quando compartilhamos cookies cheios de sabor e crocância. Aqui, cada fornada é feita com amor e uma pitada de alegria para deixar o seu dia mais doce.
+            </p>
+             </div> 
         </section>
-        <section>
-        <h2>MENU</h2>
+        <section id="menu">
+            <h2>MENU</h2>
             <div class="container">
                 <div class="item">
                     <img src="imagens/cookie_nuts.png" alt="cookie_nuts">
@@ -36,12 +52,19 @@
                      <p>Nosso cookie de doce de leite com nozes e gotas de chocolate branco chegou para conquistar seu coração</p>
                 </div>
                 <div class="item">
-                    <img src="imagens/favicon_cookie.png" alt="cookie">
-                     <h3> O Melhor cookie de todos! <br> Cookie Nut </h3>
+                    <img src="imagens/cookie_marami.png" alt="cookie_marami">
+                    <br><br><br><br>
+                     <h3> O Melhor cookie de todos! <br> MaraMI </h3>
+                     <p>Chegou o MaraMi — um encontro irresistível de sabores!
+                     Massa de cacau 100% com gotas de chocolate meio amargo e um recheio cremoso de brigadeiro de maracujá.</p>
                 </div>
                 <div class="item">
-                    <img src="imagens/favicon_cookie.png" alt="cookie">
-                     <h3> O Melhor cookie de todos! <br> Cookie Nut </h3>
+                    <img src="imagens/cookie_redvelt.png" alt="cookie_redvelt">
+                     <h3> O Melhor cookie de todos! <br> Red Velt </h3>
+                     <p>Imagine a mordida perfeita:<br>
+                    Casquinha leve por fora <br>
+                    Recheio cremoso por dentro <br>
+                    E o sabor? Melhor sentir do que explicar.</p>
                 </div>
                 <div class="item ">
                     <img src="imagens/favicon_cookie.png" alt="cookie">
@@ -57,16 +80,51 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="redes_sociais">
             <div>
                 <h2>REDES SOCIAIS</h2>
+                <div class="prints-redes-sociais">
+                     <div class="print-item">
+                        <img src="imagens/print_amanda.png" alt="Print de cliente Amanda">
+                    </div>
+
+                    <div class="print-item">
+                    <img src="imagens/print_juliana.png" alt="Print de Juliana">
+                    </div>
+
+                    <div class="print-item">
+                    <img src="imagens/print_1.png" alt="Print de WhatssApp">
+                    </div>
+
+                    <div class="print-item">
+                    <img src="imagens/print_whatssapp(3).png" alt="Print de WhatssApp(2)">
+                    </div>
+
+                  
+                </div>
             </div>
            
         </section>
-        <section>
-            <div>
+        <section id="contato">
                 <h2>CONTATO</h2>
-            </div>
+                <div class="contato-info">
+                <div class="contato-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                <span>Rua dos Gerânios, 123 - Bairro Portal dos Ipes, Cajamar - SP</span>
+                </div>
+                <div class="contato-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:contato@cookiemi.com.br">contato@cookiemi.com.br</a>
+                </div>
+                <div class="contato-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/5511940203275" target="_blank">(11) 94020-3275</a>
+                </div>
+                <div class="contato-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/cookiemi_confeitaria" target="_blank">@cookiemi_confeitaria</a>
+                </div>
+    </div>
            
         </section>
 

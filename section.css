@@ -1,63 +1,168 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
 
 :root{
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: "Montserrat", sans-serif;
-    --fonte3: "Sriracha", cursive;
-    --fonte4: "Poppins", sans-serif;
+    --fonte1: "Poppins", sans-serif;
 
-    --cor1: #6d412a; /*#5C3A25*/
-    --cor2: #ea4aac; /*#EF9F9B*/
+    --cor1: #6d412a; 
+    --cor2: #ea4aac; 
     --cor3: #FFEEE2;
-    --cor4: #d5e5f6; 
+    --cor4: #ff6347; 
 }
-#logo {
+/*Seção Quem Somos*/
+.quem-somos-conteudo {
     display: flex;
-    justify-content: center;
-    margin: 0px;
-    height: 90px;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 30px; /* Espaçamento entre a imagem e o texto */
+    max-width: 900px; /* Limita a largura do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 20px;
+    text-align: left;
 }
-.container{
-    background-image: var(--cor3);
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
 
+.quem-somos-conteudo img {
+    max-width: 300px; /* Define um tamanho máximo para a imagem */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.quem-somos-conteudo p {
+    font-size: 1.6em;
+    line-height: 1.8;
+    background-color: white;
+}
+
+/* Para dispositivos móveis, empilha a imagem e o texto */
+@media (max-width: 768px) {
+    .quem-somos-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Seção de Menu (Grid) */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
 .item {
-    background-image: url(imagens/fundo_pontinhos.jpeg);
-    background-size: cover;
-    margin: 5px;
-    color: var(--cor2);
-    font-size: 15px;
-    width:  250px;
-    height: 400px;
-    border-radius: 5px;
-    border: 2px solid;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.item p {
-    background-color: #6d412a;
-    color: var(--cor3);
-}
-h3 {
-    background-color: var(--cor3);
-    color: var(--cor1);
-    font-size: 1.2em;
+.item:hover {
+    transform: translateY(-5px);
 }
 
 .item img {
-    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
+.item h3 {
+    margin-top: 15px;
+    color: var(--cor4);
+}
+
+.item p {
+    font-size: 0.9em;
+    color: var(--cor1);
+}
+strong{
+    background-color: var(--cor3);
+    color: var(--cor2);
+}
+
+/* Seção Redes Sociais*/
+
+.prints-redes-sociais {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--cor3);
+}
+
+.print-item {
+    width: 250px; /* Largura fixa para cada item */
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem se ajuste perfeitamente ao contêiner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.print-item:hover {
+    transform: scale(1.09); /* Efeito de zoom ao passar o mouse */
+}
+
+.print-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta a imagem para preencher o contêiner sem distorcer */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 576px) {
+    .print-item {
+        width: 100%;
+        height: auto; /* Permite que a altura se ajuste com a largura */
+    }
+}
+
+/* Estilos para a seção de contato */
+.contato-info {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--cor3);
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.contato-item i {
+    color: var(--cor4); /* Cor de destaque para os ícones */
+    font-size: 1.5em;
+    width: 30px;
+    text-align: center;
+}
+
+.contato-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contato-item a:hover {
+    color: var(--cor2);
+}
+
+@media (max-width: 768px) {
+    .contato-item {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* Estilos para as seções "Quem Somos", "Redes Sociais" e "Contato" */
+section h2 {
+    text-align: center;
+}
